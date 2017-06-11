@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% for n in news %}
+    <div>{{ n.title }}</div>
+    <div>{{ n.content }}</div>
+{% endfor %}
