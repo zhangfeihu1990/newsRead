@@ -8,7 +8,7 @@ import time
 import simplejson
 import sys
 
-from model import News
+from models import News
 from mongoalchemy.session import Session
 
 reload(sys)
