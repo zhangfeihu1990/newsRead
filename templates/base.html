@@ -25,11 +25,17 @@ data-toggle="collapse" data-target=".navbar-collapse">
 </div>
 </div>
 </div>
+    <div>
     {% for n in news %}
-    <div>{{ n.title }}</div>
-    <div>{{ n.content }}</div>
+{#    <div class="news-title" style="border-bottom: solid 1px #0066CC;padding: 10px 10px" >#}
+        <b><a href="news/1">{{ n.title }}</a></b>
+        <p style="display:block">新闻来源：bbc</p>
+    </div>
+        <HR WIDTH="70%" color="#ff0033">
+
     {% endfor %}
-{% endblock %}
+    {% endblock %}
+   </div>
 
 </body>
 </html>

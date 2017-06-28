@@ -18,5 +18,11 @@ def index():
       print n.title,n.update_time
     return render_template('index.html', news=news)
 
+@app.route('/news/<int:id>')
+def getNewsById(id):
+  print id
+  body = "world news"
+  return render_template('news.html', body=body)
+
 if __name__ == '__main__':
     app.run()

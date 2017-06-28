@@ -8,7 +8,7 @@ import time
 import simplejson
 import sys
 
-from model import News
+from models import News
 from mongoalchemy.session import Session
 
 reload(sys)
@@ -47,7 +47,7 @@ def get_news_content(url):
     session = Session.connect('runoob')
     #session.clear_collection(News)
 
-    news = News(title=str(title), author=str(author), update_time=str(update_time),content=str(content))
+    news = News(title=str(title), author=str(author), update_time=str(update_time),content=str(content),url=str(url), site=str("http://edition.cnn.com/"))
     print news.title
     session.save(news)
     print '查询结果'

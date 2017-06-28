@@ -7,3 +7,6 @@ class News(Document):
      update_time = StringField()
      author = StringField()
      content = StringField()
+     #url = StringField()
+     #site = StringField()
+     #adding_tme =
